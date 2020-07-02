@@ -1,0 +1,20 @@
+{
+  "name": "cis-225-node",
+  "version": "1.0.0",
+  "description": "cis-225 nodejs homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node homework/node/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerSharara/CIS-225.git"
+  },
+  "author": "Tyler Sharara",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/TylerSharara/CIS-225/issues"
+  },
+  "homepage": "https://github.com/TylerSharara/CIS-225#readme"
+}
