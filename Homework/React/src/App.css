@@ -1,0 +1,28 @@
+.jumbotron {
+  width : 80%;
+  text-align: left;
+  margin: auto;
+}
+
+.card {
+  width: 30%;
+}
+
+.card-img-top {
+  max-width: 300px;
+  max-height: 250px;
+  margin: auto;
+}
+
+.HomeCards {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-home {
+  width: 80%;
+  margin: auto;
+}
