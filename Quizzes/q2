@@ -1,0 +1,56 @@
+<!--
+    Quiz 2 - React
+    20 pts.
+-->
+
+<!--
+    1. (5pts) Assume this quiz file is you App.js React component getting used in the index.js file.
+    Write the functon below to make it render the following H1 heading stirng.
+
+    function App() {
+      return (
+        <h1>Site Name</h1>
+      );
+    }
+
+    export default App;
+-->
+
+<!--
+    2. (5pts) Assume I have the 5 comonents listed below, add code to this file to import and render them around your H1.
+    Navbar, Heading, PageContent, Footer, and Misc
+
+        function App() {
+           return (
+              <Navbar />
+              <Heading />
+              <h1>Site Name</h1>
+              <PageContent />
+              <Misc />
+              <Footer />
+           );
+        }
+
+        export default App;
+
+-->
+
+<!--
+    3. (3pts) What would be the NPM (or yarn) command to add a package called react-bootstrap to my project.
+    npm install react-bootstrap bootstrap
+-->
+
+<!--
+    4. (3pts) What is the NPM (or yarn) command to install all my current packages.
+    npm install
+-->
+
+<!--
+    5. (2pts) Describe what the package.json file is used for.
+    The package.json file is used for keeping track of all the dependencies necessary to run.
+-->
+
+<!--
+    6. (2pts) Describe an advantage to using a framework like React over plain html.\
+    React provides modularity which makes writing code more efficient.
+-->

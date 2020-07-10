@@ -1,14 +1,36 @@
-const http = require('http');
+/*
+*   Tyler Sharara
+*   Node.js Homework
+*   Cis-225
+*   7-9-2020
+*
+*/
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const prompt = require('prompt-sync')();
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-});
+function numberGame() {
+    var num = Math.floor(Math.random() * 101);
+    var flag = false;
+    var guess = 0;
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
+    do {
+        const num2 = prompt('Guess a number between 1-100:');
+        if (num == num2) {
+            guess++;
+            flag = true;
+            console.log(`Good Job! It took you: ${guess} guesses!`, '\n');
+        } else if (num > num2) {
+            console.log(`Too low!`, '\n');
+            guess++;
+        } else if (num < num2) {
+            console.log(`Too High!`, '\n');
+            guess++;
+        }
+    } while (flag == false);
+}
+
+while (true == true){
+    numberGame();
+}
+
+

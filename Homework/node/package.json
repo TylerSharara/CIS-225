@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/TylerSharara/CIS-225/issues"
   },
-  "homepage": "https://github.com/TylerSharara/CIS-225#readme"
+  "homepage": "https://github.com/TylerSharara/CIS-225#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
