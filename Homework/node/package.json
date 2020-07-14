@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/TylerSharara/CIS-225#readme",
   "dependencies": {
+    "moment": "^2.27.0",
     "prompt-sync": "^4.2.0"
   }
 }
