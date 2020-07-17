@@ -1,0 +1,55 @@
+<!--
+    Quiz 3 - Nodejs
+    20 pts.
+-->
+
+<!--
+    1. (4pts) Assume this question is for a data.json file being used in a Node app.
+    Create a JSON object below that has at least 5 properties and values related to a student.
+    I.E. Name, GPA, Email, etc.
+
+    { "fname":"Keanu", "lname":"Reeves", "age":55, "status":"Cool", "last-movie":"John Wick: Chapter 3 – Parabellum" }
+-->
+
+<!--
+    2. (5pts) This question is for a Utilities.js file.
+    Write a module export that exports an object with 2 functions, one called read and one called write.
+    The functions can just perform a console log, they do not need to do anything for now.
+
+    module.exports = {
+        read: function(){console.log("reading")};,
+        write: function(){console.log("writing")};
+    }
+-->
+
+<!--
+    3. (6pts) Now update the read function in the Utilities.js file.
+    This function must read the data from the data.json file into a sting.
+    Then you must parse that string into an object variable.
+    Then you must return that resulting object.
+
+
+            read: function(){
+                function callback(err, data) {
+                    if (err) throw err;
+                    let data = JSON.parse(data);
+                    console.log(data);
+                }
+
+                try{
+                  fs.readFile("data.json", 'utf8', callback);
+                } catch (err){
+                    console.log(err);
+                  }
+            };
+
+-->
+
+<!--
+    4. (5pts) Now we must setup the index.js file, write a module export that exports a self-firing function.
+    Inside this function you need to create a var called utils and it must be the export of the Utilities file.
+
+    module.exports = (function () {
+        var utils = require('./Utilities')
+    })();
+-->
