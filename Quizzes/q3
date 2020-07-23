@@ -32,8 +32,8 @@
             read: function(){
                 function callback(err, data) {
                     if (err) throw err;
-                    let data = JSON.parse(data);
-                    console.log(data);
+                    let newData = JSON.parse(data);
+                    console.log(newData);
                 }
 
                 try{
